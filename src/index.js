@@ -18,9 +18,21 @@ const studentRoutes = require('./routes/studentRoutes');
 
 // middleware
 app.use(express.json());
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "*");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+  });
 
 // routes
 app.use(studentRoutes);
+app.get('/', (req, res) => {
+    res.send('Welcome!!');
+});
 
 // listening to port
 app.listen(port, () => {
