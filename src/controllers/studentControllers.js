@@ -40,10 +40,9 @@ exports.fetchStudent = (req, res) => {
 
 // update student
 exports.updateStudent = (req, res) => {
-    Student.findById(req.params.id, {
-        name: req.body.name,
-        email: req.body.email,
-        country: req.body.country
+    Student.findByIdAndUpdate(req.params.id, {
+        name: req.body.name
+        // country: req.body.country
     }, (err, student) => {
         if (err) {
             return res.status(500).json({ message: err });
