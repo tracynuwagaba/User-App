@@ -258,6 +258,14 @@ Updates a single student in the application.
 | --------------- | ------ | ------ | --------- |
 | `/students/:id` | PUT    | `id`   | `String`  |
 
+- **Request Body**
+
+```
+{
+    "name": "Test Student"
+}
+```
+
 - **Response Body**
 
 ```

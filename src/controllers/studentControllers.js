@@ -1,5 +1,6 @@
 const Student = require("../models/studentModel");
 
+// Create a student
 exports.createNewStudent = (req, res) => {
     Student.create({
         name: req.body.name,
@@ -42,7 +43,6 @@ exports.fetchStudent = (req, res) => {
 exports.updateStudent = (req, res) => {
     Student.findByIdAndUpdate(req.params.id, {
         name: req.body.name
-        // country: req.body.country
     }, (err, student) => {
         if (err) {
             return res.status(500).json({ message: err });
