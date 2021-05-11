@@ -7,6 +7,11 @@
 3. [Environmental variables](#environmental-variables)
 4. [Usage](#usage)
 5. [CRUD Operations](#crud-operations)
+   - [Create a Student](#create-a-student)
+   - [Fetch Students](#fetch-students)
+   - [Fetch single Student by Id](#fetch-single-student-by-id)
+   - [Update student by Id](#update-student-by-id)
+   - [Delete student by Id](#delete-student-by-id)
 6. [Demo link](#demo-link)
 7. [Author](#author)
 
