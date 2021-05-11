@@ -230,7 +230,7 @@ Fetches all the students in the application.
 
 ### Fetch single student by Id
 
-Fetches all the students in the application.
+Fetches a single student in the application.
 
 | End Point       | Method | Params | Data Type |
 | --------------- | ------ | ------ | --------- |
@@ -252,7 +252,7 @@ Fetches all the students in the application.
 
 ### Update student by Id
 
-Fetches all the students in the application.
+Updates a single student in the application.
 
 | End Point       | Method | Params | Data Type |
 | --------------- | ------ | ------ | --------- |
@@ -268,7 +268,7 @@ Fetches all the students in the application.
 
 ### Delete student by Id
 
-Fetches all the students in the application.
+Deletes a single student in the application.
 
 | End Point       | Method | Params | Data Type |
 | --------------- | ------ | ------ | --------- |
