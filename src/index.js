@@ -4,7 +4,7 @@ const app = express();
 // PORT
 // require('dotenv').config();
 // const { PORT } = process.env;
-const port = 4000;
+const port = process.env.PORT;
 
 // Setup database
 const db = require('./database/setup');
