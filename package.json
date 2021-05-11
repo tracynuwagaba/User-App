@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Creating a CRUD app for the student with database",
   "main": "src/index.js",
+  "engines": {
+    "node": "15.8.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
@@ -12,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/tracycod3r/User-App.git"
   },
-  "keywords": [],
+  "keywords": ["heroku"],
   "author": "Tracy Nuwagaba",
   "license": "ISC",
   "bugs": {
