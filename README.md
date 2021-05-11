@@ -1,4 +1,4 @@
-# User-App
+# Student-App
 
 ## Table of Contents
 
@@ -7,7 +7,8 @@
 3. [Environmental variables](#environmental-variables)
 4. [Usage](#usage)
 5. [CRUD Operations](#crud-operations)
-6. [Author](#author)
+6. [Demo link](#demo-link)
+7. [Author](#author)
 
 ## General info
 
@@ -18,11 +19,8 @@ Creating a CRUD app for the student with database
 - Node.js
 - Express
 
-## Main Files: Project Structure
-
 ## Environmental variables
 
-- **PORT** -- `server port number`
 - **MONGO_URI** -- `database URL`
 
 ## Usage
@@ -41,7 +39,7 @@ Adds in a new single student into the Application
 
 | End Point   | Method | Params | Data Type |
 | ----------- | ------ | ------ | --------- |
-| `/students` | POST   | `none` | `none`    |
+| `/students` | POST   | `none` | `String`  |
 
 - **Request Body**
 
@@ -231,7 +229,7 @@ Fetches all the students in the application.
 
 | End Point       | Method | Params | Data Type |
 | --------------- | ------ | ------ | --------- |
-| `/students/:id` | GET    | `none` | `none`    |
+| `/students/:id` | GET    | `id`   | `none`    |
 
 - **Response Body**
 
@@ -253,7 +251,7 @@ Fetches all the students in the application.
 
 | End Point       | Method | Params | Data Type |
 | --------------- | ------ | ------ | --------- |
-| `/students/:id` | PUT    | `none` | `none`    |
+| `/students/:id` | PUT    | `id`   | `String`  |
 
 - **Response Body**
 
@@ -269,7 +267,7 @@ Fetches all the students in the application.
 
 | End Point       | Method | Params | Data Type |
 | --------------- | ------ | ------ | --------- |
-| `/students/:id` | DELETE | `none` | `none`    |
+| `/students/:id` | DELETE | `id`   | `none`    |
 
 - **Response Body**
 
@@ -281,7 +279,7 @@ Fetches all the students in the application.
 
 ## Demo link
 
-[heroku](https://zuri-crud-task-app.herokuapp.com/)
+<https://zuri-crud-task-app.herokuapp.com/>
 
 ## Author
 
