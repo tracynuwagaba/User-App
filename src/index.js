@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 // routes
 app.use(studentRoutes);
 app.get('/', (req, res) => {
-    res.send('Welcome!!');
+    res.status(200).json({ message: 'Welcome!' });
 });
 
 // listening to port
