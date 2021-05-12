@@ -17,6 +17,8 @@ const studentSchema = new mongoose.Schema({
     }
 });
 
+mongoose.set('useCreateIndex', true);
+
 const Student = mongoose.model('Student', studentSchema);
 
 module.exports = Student;

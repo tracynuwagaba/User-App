@@ -1,32 +1,17 @@
 const express = require('express');
 const app = express();
+const studentRoutes = require('./routes/studentRoutes');
 
 // PORT
-// require('dotenv').config();
-// const { PORT } = process.env;
+require('dotenv').config();
 const port = process.env.PORT || 4000;
 
 // Setup database
 const db = require('./database/setup');
 db();
 
-// Setup schema
-// const User = require('./models/userModel');
-
-// import routes
-const studentRoutes = require('./routes/studentRoutes');
-
 // middleware
 app.use(express.json());
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "*");
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
-  });
 
 // routes
 app.use(studentRoutes);
